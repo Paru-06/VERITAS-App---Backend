@@ -10,4 +10,4 @@ fn=detect,
 inputs="textbox",
 outputs="text",
 title="VERITAS Fake News Detector"
-).launch()
+).launch(server_name="0.0.0.0")
