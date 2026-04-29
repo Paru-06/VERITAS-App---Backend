@@ -10,11 +10,11 @@ app = FastAPI()
 # 🔹 LOAD DATASETS
 # =========================
 
-fake = pd.read_csv("Fake.csv").sample(100, random_state=42)
-true = pd.read_csv("True.csv").sample(100, random_state=42)
-ag = pd.read_csv("train.csv").sample(100, random_state=42)
-welfake = pd.read_csv("WELFake_Dataset.csv").sample(100, random_state=42)
-huff = pd.read_json("News_Category_Dataset_v3.json", lines=True).sample(100, random_state=42)
+fake = pd.read_csv("Fake.csv")
+true = pd.read_csv("True.csv")
+ag = pd.read_csv("train.csv")
+welfake = pd.read_csv("WELFake_Dataset.csv")
+huff = pd.read_json("News_Category_Dataset_v3.json", lines=True)
 
 # =========================
 # 🔹 PROCESS DATA
